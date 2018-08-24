@@ -1,0 +1,18 @@
+
+body {
+    background: url(/assets/images/gplaypattern/gplaypattern_@2X.png); 
+    font-family: 'Acme', sans-serif;
+}
+
+header {
+    font-size: 120px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
