@@ -18,7 +18,8 @@
     <div class="container">
         <div class="title">
             <header>Random Facts</header>
-            <h1>Time Remaing: <span id="timer"><b>00</b></span></h1> 
+            <h1 id="timeRemaining">Time Remaing: <span id="timer"><b>00</b></span></h1> 
+            <p id="startButton">Click to Start the Game!</p>
         </div>
         <!-- questions/write each hide() and show() in JS -->
 
@@ -30,10 +31,10 @@
                 </h1>
 
                 <div class="row" id="answers1">
-                    <div class="col-lg-8"><h2>Select one of the following</h2>
+                    <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
                        <hr>
                         <form>
-                            <input type="radio" name="answerOne" value="false"> Peru and Boliva<br>
+                            <input type="radio" name="answerOne" value="false" > Peru and Boliva<br>
                             <input type="radio" name="answerOne" value="true"> Austria and Italy<br>
                             <input type="radio" name="answerOne" value="false"> Norway and Finland<br>
                             <input type="radio" name="answerOne" value="false"> Belarus and Ukraine<br>
@@ -52,7 +53,7 @@
                     </h1>
     
                     <div class="row" id="answers2">
-                        <div class="col-lg-8"><h2>Select one of the following</h2>
+                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
                             <hr>
                             <form>
                                 <input type="radio" name="answerTwo" value="false"> R4-D5<br>
@@ -74,7 +75,7 @@
                     </h1>
     
                     <div class="row" id="answers3">
-                        <div class="col-lg-8"><h2>Select one of the following</h2>
+                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
                             <hr>
                             <form>
                                 <input type="radio" name="answerThree" value="true"> Winston Churchill<br>
@@ -96,7 +97,7 @@
                     </h1>
     
                     <div class="row" id="answers4">
-                        <div class="col-lg-8"><h2>Select one of the following</h2>
+                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
                             <hr>
                             <form>
                                 <input type="radio" name="answerFour" value="false"> Mongeese<br>
@@ -118,7 +119,7 @@
                     </h1>
     
                     <div class="row" id="answers5">
-                        <div class="col-lg-8"><h2>Select one of the following</h2>
+                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
                             <hr>
                             <form>
                                 <input type="radio" name="answerFive" value="false"> Pat Morita<br>
@@ -140,7 +141,7 @@
                     </h1>
     
                     <div class="row" id="answers6">
-                        <div class="col-lg-8"><h2>Select one of the following</h2>
+                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
                             <hr>
                             <form>
                                 <input type="radio" name="answerSix" value="true"> Denver<br>
@@ -152,10 +153,19 @@
                     </div>
                 </div>
             </div>
+        <div class="row" id="totals">
+            <div class="col-lg-12">
+                <h1>Nice Try</h1>
+                <h1 id="correct">Correct: </h1>
+                <h1 id="incorrect">Wrong: </h1>
+                
+
+            </div>
+        </div>
 
         <!-- submit answers -->
         <div class="row" id="lockInAnswer">
-                <button type="button" class="btn btn-secondary btn-lg">Survey Says...</button>
+                <button type="button" class="btn btn-secondary btn-lg" id="submit">Survey Says...</button>
         </div>
 
 
@@ -167,7 +177,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 

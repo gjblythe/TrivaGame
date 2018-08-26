@@ -1,6 +1,6 @@
 
 body {
-    background: url(/assets/images/gplaypattern/gplaypattern_@2X.png); 
+    background: url(/../assets/images/gplaypattern/gplaypattern_@2X.png); 
     font-family: 'Acme', sans-serif;
 }
 
@@ -14,5 +14,17 @@ h1 {
     text-align: center;
 }
 
+.col-lg-12 {
+    text-align: center;
+}
+
+#select {
+    font-size: 20px;
+}
+
+#startButton {
+    text-align: center;
+    font-size: 40px;
+}
 
 
