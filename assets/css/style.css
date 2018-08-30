@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    font-size: 120px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -27,4 +27,8 @@ h1 {
     font-size: 40px;
 }
 
+button {
+    background-color: #ebebeb;
+    color: black;
+}
 

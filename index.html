@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Triva Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" /> 
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
@@ -18,155 +18,40 @@
     <div class="container">
         <div class="title">
             <header>Random Facts</header>
-            <h1 id="timeRemaining">Time Remaing: <span id="timer"><b>00</b></span></h1> 
+            <h1 id="timeRemaining">Time Remaing: <span id="timer"><b>00</b></span></h1>
             <p id="startButton">Click to Start the Game!</p>
         </div>
-        <!-- questions/write each hide() and show() in JS -->
 
-        <div class="row" id="question1">
-            <!-- blue catagory -->
-            <div class="col-lg-12">
-                <h1>Question One: 
-                    <h2>What two countries are linked by the Brenner Pass?</h2>
-                </h1>
-
-                <div class="row" id="answers1">
-                    <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
-                       <hr>
-                        <form>
-                            <input type="radio" name="answerOne" value="false" > Peru and Boliva<br>
-                            <input type="radio" name="answerOne" value="true"> Austria and Italy<br>
-                            <input type="radio" name="answerOne" value="false"> Norway and Finland<br>
-                            <input type="radio" name="answerOne" value="false"> Belarus and Ukraine<br>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- question 2 -->
-
-        <div class="row" id="question2">
-            <!-- pink catagory -->
-                <div class="col-lg-12">
-                    <h1>Question Two: 
-                        <h2>Who is C3-PO's sidekick?</h2>
-                    </h1>
-    
-                    <div class="row" id="answers2">
-                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
-                            <hr>
-                            <form>
-                                <input type="radio" name="answerTwo" value="false"> R4-D5<br>
-                                <input type="radio" name="answerTwo" value="false"> IG 88<br>
-                                <input type="radio" name="answerTwo" value="true"> R2-D2<br>
-                                <input type="radio" name="answerTwo" value="false"> Nien Nunb<br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <!-- question 3 -->
-        <div class="row" id="question3">
-            <!-- yellow catagory -->
-                <div class="col-lg-12">
-                    <h1>Question Three: 
-                        <h2>Who was made the first honorary citizen of the U.S.?</h2>
-                    </h1>
-    
-                    <div class="row" id="answers3">
-                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
-                            <hr>
-                            <form>
-                                <input type="radio" name="answerThree" value="true"> Winston Churchill<br>
-                                <input type="radio" name="answerThree" value="false"> Nelson Mandela<br>
-                                <input type="radio" name="answerThree" value="false"> Marquis de Lafayette<br>
-                                <input type="radio" name="answerThree" value="false"> Charles Dickens<br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         
-            <!-- question 4 -->
-        <div class="row" id="question4">
-            <!-- tan catagory -->
-                <div class="col-lg-12">
-                    <h1>Question Four: 
-                        <h2>What is the plural of mongoose?</h2>
-                    </h1>
-    
-                    <div class="row" id="answers4">
-                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
-                            <hr>
-                            <form>
-                                <input type="radio" name="answerFour" value="false"> Mongeese<br>
-                                <input type="radio" name="answerFour" value="false"> Mongoose<br>
-                                <input type="radio" name="answerFour" value="false"> Mongeeses<br>
-                                <input type="radio" name="answerFour" value="true"> Mongooses<br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       
-            <!-- question 5 -->
-        <div class="row" id="question5">
-            <!-- green catagory -->
-                <div class="col-lg-12">
-                    <h1>Question: 
-                        <h2>What is p.m. an abbreviation for, as in 5 p.m.?</h2>
-                    </h1>
-    
-                    <div class="row" id="answers5">
-                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
-                            <hr>
-                            <form>
-                                <input type="radio" name="answerFive" value="false"> Pat Morita<br>
-                                <input type="radio" name="answerFive" value="false"> Patriae Mar<br>
-                                <input type="radio" name="answerFive" value="true"> Post Meridiem<br>
-                                <input type="radio" name="answerFive" value="false"> Post Mortem<br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <!-- question 6 -->
-        <div class="row" id="question6">
-            <!-- orange catagory -->
-                <div class="col-lg-12">
-                    <h1>Question: 
-                        <h2>What city was chosen to host and then refused the 1976 Winter Olympics?</h2>
-                    </h1>
-    
-                    <div class="row" id="answers6">
-                        <div class="col-lg-12"><h2 id="select">Select one of the following</h2>
-                            <hr>
-                            <form>
-                                <input type="radio" name="answerSix" value="true"> Denver<br>
-                                <input type="radio" name="answerSix" value="false"> Innsbruck<br>
-                                <input type="radio" name="answerSix" value="false"> Lillehammer<br>
-                                <input type="radio" name="answerSix" value="false"> Montreal<br>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="row" id="totals">
-            <div class="col-lg-12">
-                <h1>Nice Try</h1>
-                <h1 id="correct">Correct: </h1>
-                <h1 id="incorrect">Wrong: </h1>
+        <div id="game">
+            <div class="row" id="gameBoard">
                 
+                <div class="col-lg-12">
+                    <h1 id="begin">Question:
+                        <h2 id="question"></h2>
+                    </h1>
 
+                    <div class="row" id="answers1">
+                        <div class="col-lg-12">
+                            <h2 id="select">Select one of the following</h2>
+                            <hr>
+                            <div id="questions"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- submit answers -->
-        <div class="row" id="lockInAnswer">
-                <button type="button" class="btn btn-secondary btn-lg" id="submit">Survey Says...</button>
+    <div class="row" id="totals">
+        <div class="col-lg-12">
+            <h1>Nice Try</h1>
+            <h1 id="correct">Correct: </h1>
+            <h1 id="incorrect">Wrong: </h1>
+            
+
         </div>
+    </div>
 
 
 
