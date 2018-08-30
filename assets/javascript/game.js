@@ -1,10 +1,13 @@
 $(document).ready(function() {
   console.log("ready!");
   $("#begin, #select, #timeRemaining, #totals").hide();
+  start();
 });
 var guess = "";
 var correct = 0;
+var correctAns =[];
 var incorrect = 0;
+var incorrectAns = [];
 var time = 60;
 var intervalId;
 var gameOver = false;
@@ -82,14 +85,18 @@ function question(question) {
     if (guess === question.winner) {
       correct++;
       progress++;
+      correctAns.push(guess);
+      console.log(correctAns);
       $("#questions").empty();
       progressGame();
       console.log(guess);
     } else {
       incorrect++;
       progress++;
+      incorrectAns.push(guess)
       $("#questions").empty();
       progressGame();
+      console.log(incorrectAns);
     }
     console.log("c" + correct, "i" + incorrect);
   });
@@ -129,19 +136,30 @@ function decrement() {
   $("#timer").text(time);
   if (time === 0 || progress === 6) {
     stop();
+    $("#questions").empty();
     $("#begin, #select, form, #timeRemaining, #questions, #game").hide();
-    $("#startButton, #totals").show();
+    $("#startButton").show();
+    $("#totals, #correct, #incorrect").show();
     $('#correct').text("Correct: " + correct);
+    $('#correctAns').text(correctAns);
     $('#incorrect').text("Incorrect: " + incorrect);
+    $('#incorrectAns').text(incorrectAns)
   }
+  
 }
-//start button
+function start(){
 $("#startButton").click(function() {
   $("#timeRemaining").show();
-  $("#startButton").hide();
-  $("#begin, #select, form").show();
+  $("#startButton, #totals").hide();
+  $("#begin, #select, #game, #questions").show();
   question(qOne);
   run();
   decrement();
   time = 60;
+  progress = 0;
+  correct = 0;
+  incorrect = 0;
+  incorrectAns = [];
+  correctAns = [];
 });
+};
