@@ -65,7 +65,7 @@ qSix = {
 for (var i = 0; i < game.length; i++) {
   goRound = question[i];
   console.log(goRound);
-}
+};
 
 function question(question) {
   $("#question").text(question.text);
@@ -77,7 +77,7 @@ function question(question) {
         buttons +
         "</button>"
     );
-  }
+  };
 
   $("button").click(function() {
     console.log($(this).text());
@@ -101,7 +101,7 @@ function question(question) {
     console.log("c" + correct, "i" + incorrect);
   });
   console.log(question.winner);
-}
+};
 
 function progressGame() {
   if (progress === 1) {
@@ -115,20 +115,16 @@ function progressGame() {
   } else {
     question(qSix);
   }
-}
+};
 
-//game
 
-//need help here. This is sloppy and totally wrong
-
-//timer
 function run() {
   clearInterval(intervalId);
   intervalId = setInterval(decrement, 1000);
-}
+};
 function stop() {
   clearInterval(intervalId);
-}
+};
 
 function decrement() {
   time--;
@@ -144,9 +140,9 @@ function decrement() {
     $('#correctAns').text(correctAns);
     $('#incorrect').text("Incorrect: " + incorrect);
     $('#incorrectAns').text(incorrectAns)
-  }
-  
-}
+  }; 
+};
+
 function start(){
 $("#startButton").click(function() {
   $("#timeRemaining").show();
@@ -163,3 +159,4 @@ $("#startButton").click(function() {
   correctAns = [];
 });
 };
+

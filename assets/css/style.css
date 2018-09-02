@@ -1,35 +1,33 @@
-
 body {
-    background: url(/TrivaGame/assets/gplaypattern_@2X.png);
-     
-    font-family: 'Acme', sans-serif;
+  background: url(/TrivaGame/assets/gplaypattern_@2X.png);
+
+  font-family: "Acme", sans-serif;
 }
 
 header {
-    font-size: 80px;
-    text-align: center;
+  font-size: 80px;
+  text-align: center;
 }
 
 h1 {
-    font-size: 80px;
-    text-align: center;
+  font-size: 80px;
+  text-align: center;
 }
 
 .col-lg-12 {
-    text-align: center;
+  text-align: center;
 }
 
 #select {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #startButton {
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 
 button {
-    background-color: #ebebeb;
-    color: black;
+  background-color: #ebebeb;
+  color: black;
 }
-
